@@ -140,12 +140,12 @@ class Viewer extends Component {
         return (
             <div className="wrapper">
 
-                <ViewerModal open={!this.state.isLoaded}>
+                <ViewerModal isOpen={!this.state.isLoaded}>
                     <div className="preloader-spinner" />
                     <h6 className="preloader-text">Загрузка..</h6>
                 </ViewerModal>
                 {/*
-                <ViewerModal open={this.state.isLoaded && !this.state.seatPicked}>
+                <ViewerModal isOpen={this.state.isLoaded && !this.state.seatPicked}>
                     <h6>Выберете место для предпросмотра</h6>
                 </ViewerModal>
                 */}
